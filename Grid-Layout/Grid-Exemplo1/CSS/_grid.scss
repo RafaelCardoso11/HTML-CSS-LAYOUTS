@@ -1,0 +1,35 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 0px solid white;
+    padding: 20px 0px 20px 0px;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "item-sidenav items items"
+        "item-sidenav items items"
+        "footer footer footer";
+
+    justify-content: center;
+
+    .item-sidenav {
+        @include responsiveSize(false);
+        min-height: 620px;
+        background: rgb(131, 121, 121);
+        grid-row: item-sidenav;
+    }
+
+    .items {
+        @include responsiveSize();
+        background: $items-Small-color;
+        grid-area: "items";
+    }
+
+    .footer {
+        width: auto;
+        height: 300px;
+        background: rgb(59, 59, 59);
+        grid-column: footer;
+    }
+}

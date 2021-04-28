@@ -1,0 +1,21 @@
+$primary-color-Black: black;
+$secundary-black-body: rgb(30,30,30);
+$white-color: white;
+$items-Small-color: silver;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "MuseoModerno", cursive;
+}
+body{
+    background: $secundary-black-body;
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}

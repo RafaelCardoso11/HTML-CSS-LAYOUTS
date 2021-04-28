@@ -1,0 +1,22 @@
+@media (max-width: 800px) {
+    .container {
+        margin-left: 5vh;
+        grid-template-areas:
+            "item-sidenav items"
+            "item-sidenav items"
+            "item-sidenav items"
+            "item-sidenav items"
+            "footer footer";
+    }
+}
+@media (max-width: 540px) {
+    .container {
+        grid-template-areas:
+            "item-sidenav"
+            "items"
+            "items"
+            "items"
+            "items"
+            "footer";
+    }
+}

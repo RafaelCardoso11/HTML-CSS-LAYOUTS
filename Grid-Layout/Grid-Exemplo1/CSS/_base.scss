@@ -1,0 +1,27 @@
+$primary-color-Black: black;
+$secundary-black-body: rgb(30,30,30);
+$white-color: white;
+$items-Small-color: silver;
+
+@mixin responsiveSize($is300px: true) {
+    max-width: 300px;
+    min-width: 250px;
+    @if $is300px == true {
+        height: 300px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MuseoModerno", cursive;
+}
+body {
+    background: $secundary-black-body;
+}
+h2 {
+    color: $white-color;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
